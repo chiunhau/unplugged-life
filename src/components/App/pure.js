@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import './index.scss';
 import Hamburger from '../Hamburger';
 import OverlayMenu from '../OverlayMenu';
@@ -55,8 +55,12 @@ class App extends Component {
                 <p className="title">挑戰目標三：傳播你的冒險故事：成為一個有故事的人</p>
                 <p className="paragraph">害怕驀然回首發現自己沒有甚麼人生故事好講嗎？故事的起點，就從參賽開始！結束限時大挑戰後，和你的隊友們找尋陌生人，交換你們的冒險故事吧！</p>
               </div>
-            </div>
 
+            </div>
+            <div className="challange">
+              <img className="content-image" src="/img/challange-m.png" alt=""/>
+              <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
+            </div>
           </section>
         </div>
       </BrowserRouter>

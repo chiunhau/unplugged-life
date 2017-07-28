@@ -1,0 +1,17 @@
+.hamburger-icon {
+  z-index: 100;
+
+  .bar {
+    margin: 6px 0;
+    width: 40px;
+    height: 6px;
+    background-color: $brand-blue;
+
+  }
+
+  &.-active {
+    .bar {
+      background-color: #fff;
+    }
+  }
+}

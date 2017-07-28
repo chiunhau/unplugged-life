@@ -5,3 +5,110 @@ html, body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.hamburger-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url('/img/landing-cover.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  .dots-menu {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+  }
+
+  .key-visual {
+    margin-top: 70px;
+    width: 60%;
+    max-width: 220px;
+
+  }
+
+  .slogan {
+    margin-top: 40px;
+    color: $brand-green;
+    font-size: 16px;
+    font-weight: bold;
+
+    &.-desktop {
+      display: none;
+    }
+  }
+
+  .subslogan {
+    margin-top: 20px;
+    color: $brand-green;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2;
+
+    &.-desktop {
+      display: none;
+    }
+  }
+
+  @include for-size(desktop) {
+    &:before {
+      content: "";
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .key-visual {
+      display: inline-block;
+      width: 360px;
+      max-width: none;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .slogan {
+      display: none;
+
+      &.-desktop {
+        display: block;
+        position: absolute;
+        margin-top: 0;
+        font-size: 18px;
+        left: 60px;
+        top: 100px;
+        color: #fff;
+      }
+    }
+
+    .subslogan {
+      display: none;
+
+      &.-desktop {
+        display: block;
+        position: absolute;
+        font-size: 14px;
+        font-weight: lighter;
+        left: 100px;
+        top: 100px;
+        margin-top: 0;
+        color: #fff;
+        line-height: 1.3;
+
+      }
+    }
+
+
+  }
+}

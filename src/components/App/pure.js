@@ -4,6 +4,19 @@ import './index.scss';
 import Hamburger from '../Hamburger';
 import OverlayMenu from '../OverlayMenu';
 import DotsMenu from '../DotsMenu';
+import ToggleQA from '../ToggleQA';
+
+const qa = [
+  '可以，參賽者須為18歲至24歲青年，並無學生身分限制，歡迎每位想開啟勇敢模式的你來報名喔!',
+  '不可，以個人為單位報名，報名成功後會由主辦單位協助隨機組成四人團隊，報名費以1300元/人收費，認識的朋友可能會被打散到不同組別喔。',
+  '1300元費用除了兩頓早餐、三頓午餐、兩頓晚餐外，包含保險以及兩天住宿，完全成本價，72小時不插電生活不會讓你只住帳棚度過單純的三天生活，更需要你走出帳篷外，完成挑戰任務，還有兩位重量級超強引導員加持帶領你經驗反思，完全物超所值！',
+  '報名７２小時不插電生活你會有６０位夥伴與你一起踏出舒適圈，開啟你的勇敢模式！我們不只是單純的度過無電的三日生活，更要你與你的夥伴們一起完成限時挑戰、故事傳播，這條路上，你絕不孤單！還有兩位重量級超強引導員與工作人員帶領你一起展開全新體驗！',
+  '可以，但在進場時會統一交由主辦方保管，直到活動結束才會歸還喔！',
+  '只要能全程參與活動，皆可算完賽，可獲得完賽紀念品。但完成目標之成果、時間以及質量則會作為最後頒獎之參考依據。',
+  '我們將依今年的活動成果決定明年是否舉辦更特別的挑戰項目！如果心動就趕快把握機會即刻報名囉!',
+  '這次的大夢城市沒有下一階段，72小時不插電生活就是這次的主題活動囉！',
+  '可以直接私訊我們粉絲專頁或是寄信到官方信箱哦，我們都會很快地回覆大家！ 信箱:dreamercity@citywanderer.org'
+]
 
 class App extends Component {
   render() {
@@ -60,6 +73,46 @@ class App extends Component {
             <div className="challange">
               <img className="content-image" src="/img/challange-m.png" alt=""/>
               <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
+            </div>
+          </section>
+          <section className="section-4">
+            <div className="container">
+              <img className="icon-section" src="/img/icon-section-4.png" alt="常見問題"/>
+              <img className="img-title" src="/img/section-4-title.png" alt="常見問題" />
+
+              {
+                qa.map((q, i) => {
+                  return (
+                    <ToggleQA titleImg={`/img/Q${i+1}-01.png`}>
+                      {q}
+                    </ToggleQA>
+                  )
+                })
+              }
+            </div>
+          </section>
+          <section className="section-5">
+            <div className="container">
+              <img className="icon-section" src="/img/icon-section-5.png" alt="常見問題"/>
+              <img className="img-title" src="/img/section-5-title.png" alt="常見問題" />
+              <div className="organization">
+                <img className="logo" src="/img/logo-city-wanderer.png" alt=""/>
+                <img className="title" src="/img/title-city-wanderer.png" alt=""/>
+                <p>自2013年成立，相信Inspire people, cultivate the world，協會共舉辦超過49場流浪挑戰賽，以任務體驗的方式鼓勵青年藉由探索自身天賦以達到貢獻社會的目標。</p>
+              </div>
+              <div className="organization">
+                <img className="logo" src="/img/logo-gamania.png" alt=""/>
+                <img className="title" src="/img/title-gamania.png" alt=""/>
+                <p>自2009年開始，秉持著「青年應該用力作大夢、用力做自己」的信念，接連創辦夏日學園、大夢計劃和DRM造夢論壇，陪伴超過400位青年體驗冒險教育。</p>
+              </div>
+              <img src="/img/section-5-slogan.png" alt="" className="slogan"/>
+            </div>
+          </section>
+          <section className="section-6">
+            <div className="container">
+              <img className="icon-section" src="/img/icon-section-6.png" alt="常見問題"/>
+              <img className="img-title" src="/img/section-6-title.png" alt="常見問題" />
+              <img src="/img/section-6-slogan.png" alt="" className="slogan"/>
             </div>
           </section>
         </div>

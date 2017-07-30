@@ -231,3 +231,52 @@ section {
     }
   }
 }
+
+.section-4 {
+  padding-top: 26px;
+  padding-left: 36px;
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
+}
+
+.section-5 {
+  padding-top: 26px;
+  padding-left: 36px;
+
+  .organization {
+    text-align: center;
+
+    .logo {
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .title {
+      max-width: 260px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .slogan {
+    max-width: 360px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.section-6 {
+  padding-top: 26px;
+  padding-left: 36px;
+
+  .slogan {
+    max-width: 360px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}

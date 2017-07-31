@@ -21,7 +21,7 @@ class NewComponent extends Component {
   render() {
     const { titleImg, children } = this.props;
     return (
-      <div className="toggle-qa-m">
+      <div className="toggle-qa">
         <img src={titleImg} alt="" className="image-title" onClick={this.handleToggle}/>
         <p className="paragraph" style={{display: `${this.state.isOpen ? 'block' : 'none'}`}}>
           { children }

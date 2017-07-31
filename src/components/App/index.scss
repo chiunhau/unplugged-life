@@ -21,6 +21,8 @@ html, body {
 }
 
 section {
+  position: relative;
+
   .img-title {
     height: 40px;
   }
@@ -29,6 +31,12 @@ section {
     width: 32px;
     position: absolute;
     left: -28px;
+
+    @include for-size(tablet) {
+      width: 60px;
+      left: -80px;
+      top: -16px;
+    }
   }
 
   .paragraph {
@@ -148,16 +156,6 @@ section {
   padding-top: 26px;
   padding-left: 36px;
 
-  &:before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    position: absolute;
-    left: 20px;
-    background-color: $brand-blue;
-  }
-
-
   .youtube  {
     @include for-size(phone) {
       margin-bottom: 40px;
@@ -211,8 +209,17 @@ section {
 
   .challange {
     position: relative;
+    width: 100%;
+
     .content-image {
-      width: 96%;
+      &.-m {
+        display: block;
+        width: 100%;
+      }
+
+      &.-d {
+        display: none;
+      }
     }
 
     .button {
@@ -220,7 +227,7 @@ section {
       left: 0;
       right: 0;
       margin: 0 auto;
-      bottom: 6%;
+      bottom: 4%;
       display: block;
       width: 54%;
       text-align: center;
@@ -229,12 +236,50 @@ section {
         width: 100%;
       }
     }
+
+    @include for-size(tablet) {
+      .content-image {
+        &.-m {
+          display: none;
+        }
+
+        &.-d {
+          display: block;
+          margin: auto;
+          width: 100%;
+        }
+      }
+
+      .button {
+        position: absolute;
+        left: auto;
+        right: 5%;
+        margin: 0 auto;
+        bottom: 10%;
+        display: block;
+        width: 30%;
+        text-align: center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
+
+
 }
 
 .section-4 {
   padding-top: 26px;
   padding-left: 36px;
+
+  @include for-size(tablet) {
+    .toggle-qa {
+      margin-left: 30%;
+      width: 70%;
+    }
+  }
 
   .paragraph {
     margin-bottom: 20px;
@@ -246,6 +291,7 @@ section {
   padding-left: 36px;
 
   .organization {
+    margin-bottom: 30px;
     text-align: center;
 
     .logo {
@@ -254,23 +300,83 @@ section {
       margin: 0 auto;
     }
 
-    .title {
-      max-width: 260px;
+    .info {
+      .title {
+        max-width: 260px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .paragraph {
+        margin-bottom: 30px;
+      }
+    }
+
+  }
+
+  .slogan {
+    &.-d {
+      display: none;
+    }
+
+    &.-m {
       display: block;
+      width: 100%;
       margin: 0 auto;
     }
   }
 
-  .slogan {
-    max-width: 360px;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+  @include for-size(tablet) {
+    .organization {
+      position: relative;
+      margin-left: 30%;
+      width: 70%;
+      text-align: left;
+
+      .logo {
+        width: 35%;
+        max-width: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .info {
+        width: 65%;
+        display: inline-block;
+        vertical-align: middle;
+
+        .title {
+          margin: 0;
+          margin-bottom: 30px;
+          max-width: 360px;
+        }
+
+        .paragraph {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .slogan {
+      margin-top: 60px;
+      &.-d {
+        display: block;
+        margin-left: 30%;
+        width: 70%;
+        max-width: none;
+      }
+
+      &.-m {
+        display: none;
+      }
+    }
   }
 }
 
 .section-6 {
   padding-top: 26px;
+  padding-bottom: 60px;
   padding-left: 36px;
 
   .slogan {
@@ -278,5 +384,21 @@ section {
     width: 100%;
     display: block;
     margin: 0 auto;
+
+    &.-d {
+      display: none;
+    }
+
+    @include for-size(tablet) {
+      &.-d {
+        display: block;
+        max-width: none;
+        width: 70%;
+        margin-left: 30%;
+      }
+      &.-m {
+        display: none;
+      }
+    };
   }
 }

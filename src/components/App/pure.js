@@ -68,11 +68,12 @@ class App extends Component {
                 <p className="title">挑戰目標三：傳播你的冒險故事：成為一個有故事的人</p>
                 <p className="paragraph">害怕驀然回首發現自己沒有甚麼人生故事好講嗎？故事的起點，就從參賽開始！結束限時大挑戰後，和你的隊友們找尋陌生人，交換你們的冒險故事吧！</p>
               </div>
+              <div className="challange">
+                <img className="content-image -m" src="/img/challange-m.png" alt=""/>
+                <img className="content-image -d" src="/img/challange.png" alt=""/>
+                <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
+              </div>
 
-            </div>
-            <div className="challange">
-              <img className="content-image" src="/img/challange-m.png" alt=""/>
-              <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
             </div>
           </section>
           <section className="section-4">
@@ -97,24 +98,31 @@ class App extends Component {
               <img className="img-title" src="/img/section-5-title.png" alt="常見問題" />
               <div className="organization">
                 <img className="logo" src="/img/logo-city-wanderer.png" alt=""/>
-                <img className="title" src="/img/title-city-wanderer.png" alt=""/>
-                <p>自2013年成立，相信Inspire people, cultivate the world，協會共舉辦超過49場流浪挑戰賽，以任務體驗的方式鼓勵青年藉由探索自身天賦以達到貢獻社會的目標。</p>
+                <div className="info">
+                  <img className="title" src="/img/title-city-wanderer.png" alt=""/>
+                  <p className="paragraph">自2013年成立，相信Inspire people, cultivate the world，協會共舉辦超過49場流浪挑戰賽，以任務體驗的方式鼓勵青年藉由探索自身天賦以達到貢獻社會的目標。</p>
+                </div>
               </div>
               <div className="organization">
                 <img className="logo" src="/img/logo-gamania.png" alt=""/>
-                <img className="title" src="/img/title-gamania.png" alt=""/>
-                <p>自2009年開始，秉持著「青年應該用力作大夢、用力做自己」的信念，接連創辦夏日學園、大夢計劃和DRM造夢論壇，陪伴超過400位青年體驗冒險教育。</p>
+                <div className="info">
+                  <img className="title" src="/img/title-gamania.png" alt=""/>
+                  <p className="paragraph">自2009年開始，秉持著「青年應該用力作大夢、用力做自己」的信念，接連創辦夏日學園、大夢計劃和DRM造夢論壇，陪伴超過400位青年體驗冒險教育。</p>
+                </div>
               </div>
-              <img src="/img/section-5-slogan.png" alt="" className="slogan"/>
+              <img src="/img/section-5-slogan.png" alt="" className="slogan -d"/>
+              <img src="/img/section-5-slogan-m.png" alt="" className="slogan -m"/>
             </div>
           </section>
           <section className="section-6">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-6.png" alt="常見問題"/>
-              <img className="img-title" src="/img/section-6-title.png" alt="常見問題" />
-              <img src="/img/section-6-slogan.png" alt="" className="slogan"/>
+              <img className="icon-section" src="/img/icon-section-6.png" alt="聯絡我們"/>
+              <img className="img-title" src="/img/section-6-title.png" alt="聯絡我們" />
+              <img src="/img/section-6-slogan.png" alt="" className="slogan -d"/>
+              <img src="/img/section-6-slogan-m.png" alt="" className="slogan -m"/>
             </div>
           </section>
+
         </div>
       </BrowserRouter>
     );

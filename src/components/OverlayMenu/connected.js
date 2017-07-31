@@ -7,7 +7,7 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-
+  onClick: () => dispatch({type: 'CLOSE_OVERLAY_MENU'})
 });
 
 export default connect(

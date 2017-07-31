@@ -34,6 +34,7 @@
       &:hover {
         .section {
           color: $brand-blue;
+          cursor: pointer;
 
           .text {
             opacity: 1;

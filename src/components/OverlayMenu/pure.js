@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import './index.scss';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
+
 
 class NewComponent extends Component {
+  handleClick = () => {
+    this.props.onClick();
+  }
   render() {
     const { sections, isActive } = this.props;
 
@@ -11,7 +17,7 @@ class NewComponent extends Component {
           {
             sections.map((section, i) => {
               return (
-                <li className="section" key={i}>{section}</li>
+                <li className="section" key={i}><ScrollLink to={`section-${i + 2}`} spy={true} smooth={true} duration={500}className="text" onClick={this.handleClick}>{section}</ScrollLink></li>
               )
             })
           }

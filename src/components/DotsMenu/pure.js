@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './index.scss';
+import Scroll from 'react-scroll';
+const ScrollLink = Scroll.Link;
 
 class NewComponent extends Component {
   render() {
@@ -10,7 +12,7 @@ class NewComponent extends Component {
           {
             sections.map((section, i) => {
               return (
-                <li className="section" key={i}><span className="text">{section}</span><span className="dot"></span></li>
+                <li className="section" key={i}><ScrollLink to={`section-${i + 2}`} spy={true} smooth={true} duration={500}className="text">{section}</ScrollLink><span className="dot"></span></li>
               )
             })
           }

@@ -13,7 +13,8 @@ export default (state = init, action) => {
   switch (action.type) {
     case 'TOGGLE_OVERLAY_MENU':
       return {...state, isActive: !state.isActive}
-
+      case 'CLOSE_OVERLAY_MENU':
+        return {...state, isActive: false}
     default:
       return state
   }

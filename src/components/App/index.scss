@@ -20,6 +20,18 @@ html, body {
   position: relative;
 }
 
+.footer-logo {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+  }
+}
+
 section {
   position: relative;
   padding-bottom: 20px;
@@ -272,11 +284,15 @@ section {
     font-size: 20px;
   }
 
+  .info {
+    display: none;
+  }
   @include for-size(tablet) {
     .quote {
       font-size: 26px;
     }
     .info {
+      position: relative;
       margin-left: 0%;
       width: 100%;
     }
@@ -290,6 +306,14 @@ section {
     .info {
       margin-left: 30%;
       width: 70%;
+
+      .icons {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: -280px;
+        width: 250px;
+      }
     }
 
   }

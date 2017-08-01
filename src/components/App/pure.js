@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import './index.scss';
 import Hamburger from '../Hamburger';
 import OverlayMenu from '../OverlayMenu';
@@ -45,14 +45,14 @@ class App extends Component {
                   你，想過什麼樣的生活？<br/>你要怎麼樣才能追求夢想，而不是被生活牽著鼻子走？<br/>生活在電子通訊發達時代的我們，總害怕面對空白與尷尬，<br/>一沒電就陷入恐慌，更無法想像完全沒有電力的生活。
                 </p>
                 <div className="youtube">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/fF36QXtx-W0" frameBorder="0" allowFullScreen title="youtube"></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NKwNwG7GSaI" frameBorder="0" allowFullScreen title="youtube"></iframe>
                 </div>
                 <p className="quote">「如果這個夏日，失去三天電，你會獲得什麼呢？」</p>
                 <p className="paragraph">讓我們重新感知對於生活的感受，為自己，勇敢再勇敢，開啟你的勇敢模式！ 大夢城市挑戰賽，72小時無電體驗，讓你在沒有中尋找你所擁有的。</p>
               </div>
               <div className="right">
                 <img src="/img/section-2-grid.png" alt="" className="grid"/>
-                <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
+                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="/img/btn-brave.png" alt=""/></a>
               </div>
             </div>
           </section>
@@ -81,7 +81,7 @@ class App extends Component {
               <div className="challange">
                 <img className="content-image -m" src="/img/challange-m.png" alt=""/>
                 <img className="content-image -d" src="/img/challange.png" alt=""/>
-                <Link to="#" className="button"><img src="/img/btn-brave.png" alt=""/></Link>
+                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="/img/btn-brave.png" alt=""/></a>
               </div>
 
             </div>

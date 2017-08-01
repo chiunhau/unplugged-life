@@ -42,6 +42,12 @@ section {
     top: -2px;
 
     @include for-size(tablet) {
+      width: 36px;
+      left: -28px;
+      top: 20px;
+    }
+
+    @include for-size(desktop) {
       width: 60px;
       left: -80px;
       top: -12px;
@@ -189,16 +195,16 @@ section {
 
   @include for-size(tablet) {
     .left {
-      width: 60%;
-      display: inline-block;
+      width: 100%;
+      display: block;
     }
 
     .right {
-      width: 40%;
-      display: inline-block;
+      width: 100%;
+      display: block;
       text-align: center;
       .grid {
-        display: block;
+        display: none;
       }
 
       .button {
@@ -210,7 +216,24 @@ section {
         }
       }
     }
-  };
+  }
+
+  @include for-size(desktop) {
+    .left {
+      width: 60%;
+      display: inline-block;
+    }
+    .right {
+      width: 40%;
+      display: inline-block;
+      text-align: center;
+
+      .grid {
+        display: block;
+      }
+    }
+
+  }
 
   .quote {
     font-size: 20px;
@@ -250,6 +273,17 @@ section {
   }
 
   @include for-size(tablet) {
+    .quote {
+      font-size: 26px;
+    }
+    .info {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+  }
+
+  @include for-size(desktop) {
     .quote {
       font-size: 30px;
     }
@@ -373,14 +407,14 @@ section {
     text-align: center;
 
     .logo {
-      max-width: 200px;
+      max-width: 180px;
       display: block;
       margin: 0 auto;
     }
 
     .info {
       .title {
-        max-width: 260px;
+        max-width: 230px;
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
@@ -408,8 +442,8 @@ section {
   @include for-size(tablet) {
     .organization {
       position: relative;
-      margin-left: 30%;
-      width: 70%;
+      margin-left: 0%;
+      width: 100%;
       text-align: left;
 
       .logo {
@@ -447,6 +481,38 @@ section {
 
       &.-m {
         display: none;
+      }
+    }
+  }
+
+  @include for-size(desktop) {
+    .organization {
+      position: relative;
+      margin-left: 30%;
+      width: 70%;
+      text-align: left;
+
+      .logo {
+        width: 35%;
+        max-width: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .info {
+        width: 65%;
+        display: inline-block;
+        vertical-align: middle;
+
+        .title {
+          margin: 0;
+          margin-bottom: 30px;
+          max-width: 360px;
+        }
+
+        .paragraph {
+          margin-bottom: 0;
+        }
       }
     }
   }

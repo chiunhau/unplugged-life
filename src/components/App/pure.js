@@ -25,10 +25,10 @@ class App extends Component {
         <div className="app">
           <Hamburger/>
           <OverlayMenu/>
-          <img className="footer-logo" src="/img/footer-logo.png" alt=""/>
+          <img className="footer-logo" src="img/footer-logo.png" alt=""/>
           <section className="section-1">
             <DotsMenu/>
-            <img className="key-visual" src="/img/key-visual.png" alt="不插電生活"/>
+            <img className="key-visual" src="img/key-visual.png" alt="不插電生活"/>
             <h2 className="slogan">「你的夢想怎麼樣了呢？」</h2>
             <p className="subslogan">不插電生活，<br/>為自己，<br/>勇敢再勇敢，<br/>一起勇敢追夢吧！</p>
 
@@ -38,34 +38,34 @@ class App extends Component {
 
           <section className="section-2" id="section-2">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-2.png" alt="計畫緣起"/>
-              <img className="img-title" src="/img/section-2-title.png" alt="計畫緣起" />
+              <img className="icon-section" src="img/icon-section-2.png" alt="計畫緣起"/>
+              <img className="img-title" src="img/section-2-title.png" alt="計畫緣起" />
               <div className="left">
                 <p className="paragraph">
                   你，想過什麼樣的生活？<br/>你要怎麼樣才能追求夢想，而不是被生活牽著鼻子走？<br/>生活在電子通訊發達時代的我們，總害怕面對空白與尷尬，<br/>一沒電就陷入恐慌，更無法想像完全沒有電力的生活。
                 </p>
                 <div className="youtube">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NKwNwG7GSaI" frameBorder="0" allowFullScreen title="youtube"></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/XkUboSHhwNU" frameBorder="0" allowFullScreen title="youtube"></iframe>
                 </div>
                 <p className="quote">「如果這個夏日，失去三天電，你會獲得什麼呢？」</p>
                 <p className="paragraph">讓我們重新感知對於生活的感受，為自己，勇敢再勇敢，開啟你的勇敢模式！ 大夢城市挑戰賽，72小時無電體驗，讓你在沒有中尋找你所擁有的。</p>
               </div>
               <div className="right">
-                <img src="/img/section-2-grid.png" alt="" className="grid"/>
-                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="/img/btn-brave.png" alt=""/></a>
+                <img src="img/section-2-grid.png" alt="" className="grid"/>
+                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="img/btn-brave.png" alt=""/></a>
               </div>
             </div>
           </section>
 
           <section className="section-3" id="section-3">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-3.png" alt="計畫緣起"/>
-              <img className="img-title" src="/img/section-3-title.png" alt="計畫緣起" />
+              <img className="icon-section" src="img/icon-section-3.png" alt="計畫緣起"/>
+              <img className="img-title" src="img/section-3-title.png" alt="計畫緣起" />
               <div className="info">
                 <p className="quote">『放下習以為常的生活，產生前所未有的勇氣』</p>
                 <p className="paragraph">沒有電的你會是一無所有嗎？無電生活的參賽者就像生活在一個小部落裡，每天面對生活與挑戰。邀請你來完成大家在有電時可以順利完成的事物，但這一次，你沒有垂手可得的資源，你，可以順利達成嗎？實踐夢想只差踏出去的勇氣，這一次，開啟你的勇敢模式，來完成顛覆自己原先的想像的事情！這絕對會是一場挫折不斷，卻驚喜連連的挑戰，最終完賽時，你一定會不可置信地發現：「勇敢再勇敢，沒什麼不敢！」
                 </p>
-                <img className="unplugged-goal" src="/img/unplugged-goal.png" alt=""/>
+                <img className="unplugged-goal" src="img/unplugged-goal.png" alt=""/>
                 <div className="goal-box">
                   <p className="title">挑戰目標一：放下習以為常的生活：過過前人的生活，體驗無電生活</p>
                   <p className="description paragraph">
@@ -76,26 +76,26 @@ class App extends Component {
                   <p className="title">挑戰目標三：傳播你的冒險故事：成為一個有故事的人</p>
                   <p className="paragraph">害怕驀然回首發現自己沒有甚麼人生故事好講嗎？故事的起點，就從參賽開始！結束限時大挑戰後，和你的隊友們找尋陌生人，交換你們的冒險故事吧！</p>
                 </div>
-                <img className="icons" src="/img/section-3-icons.png" alt=""/>
+                <img className="icons" src="img/section-3-icons.png" alt=""/>
               </div>
 
               <div className="challange">
-                <img className="content-image -m" src="/img/challange-m.png" alt=""/>
-                <img className="content-image -d" src="/img/challange.png" alt=""/>
-                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="/img/btn-brave.png" alt=""/></a>
+                <img className="content-image -m" src="img/challange-m.png" alt=""/>
+                <img className="content-image -d" src="img/challange.png" alt=""/>
+                <a href="https://www.accupass.com/event/1707111229276298703140" className="button" target="_blank" rel="noopener noreferrer"><img src="img/btn-brave.png" alt=""/></a>
               </div>
 
             </div>
           </section>
           <section className="section-4" id="section-4">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-4.png" alt="常見問題"/>
-              <img className="img-title" src="/img/section-4-title.png" alt="常見問題" />
+              <img className="icon-section" src="img/icon-section-4.png" alt="常見問題"/>
+              <img className="img-title" src="img/section-4-title.png" alt="常見問題" />
 
               {
                 qa.map((q, i) => {
                   return (
-                    <ToggleQA titleImg={`/img/Q${i+1}-01.png`} key={i}>
+                    <ToggleQA titleImg={`img/Q${i+1}-01.png`} key={i}>
                       {q}
                     </ToggleQA>
                   )
@@ -105,32 +105,32 @@ class App extends Component {
           </section>
           <section className="section-5" id="section-5">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-5.png" alt="常見問題"/>
-              <img className="img-title" src="/img/section-5-title.png" alt="常見問題" />
+              <img className="icon-section" src="img/icon-section-5.png" alt="常見問題"/>
+              <img className="img-title" src="img/section-5-title.png" alt="常見問題" />
               <div className="organization">
-                <img className="logo" src="/img/logo-city-wanderer.png" alt=""/>
+                <img className="logo" src="img/logo-gamania.png" alt=""/>
                 <div className="info">
-                  <img className="title" src="/img/title-city-wanderer.png" alt=""/>
-                  <p className="paragraph">自2013年成立，相信Inspire people, cultivate the world，協會共舉辦超過49場流浪挑戰賽，以任務體驗的方式鼓勵青年藉由探索自身天賦以達到貢獻社會的目標。</p>
-                </div>
-              </div>
-              <div className="organization">
-                <img className="logo" src="/img/logo-gamania.png" alt=""/>
-                <div className="info">
-                  <img className="title" src="/img/title-gamania.png" alt=""/>
+                  <img className="title" src="img/title-gamania.png" alt=""/>
                   <p className="paragraph">自2009年開始，秉持著「青年應該用力作大夢、用力做自己」的信念，接連創辦夏日學園、大夢計劃和DRM造夢論壇，陪伴超過400位青年體驗冒險教育。</p>
                 </div>
               </div>
-              <img src="/img/section-5-slogan.png" alt="" className="slogan -d"/>
-              <img src="/img/section-5-slogan-m.png" alt="" className="slogan -m"/>
+              <div className="organization">
+                <img className="logo" src="img/logo-city-wanderer.png" alt=""/>
+                <div className="info">
+                  <img className="title" src="img/title-city-wanderer.png" alt=""/>
+                  <p className="paragraph">自2013年成立，相信Inspire people, cultivate the world，協會共舉辦超過49場流浪挑戰賽，以任務體驗的方式鼓勵青年藉由探索自身天賦以達到貢獻社會的目標。</p>
+                </div>
+              </div>
+              <img src="img/section-5-slogan.png" alt="" className="slogan -d"/>
+              <img src="img/section-5-slogan-m.png" alt="" className="slogan -m"/>
             </div>
           </section>
           <section className="section-6" id="section-6">
             <div className="container">
-              <img className="icon-section" src="/img/icon-section-6.png" alt="聯絡我們"/>
-              <img className="img-title" src="/img/section-6-title.png" alt="聯絡我們" />
-              <img src="/img/section-6-slogan.png" alt="" className="slogan -d"/>
-              <img src="/img/section-6-slogan-m.png" alt="" className="slogan -m"/>
+              <img className="icon-section" src="img/icon-section-6.png" alt="聯絡我們"/>
+              <img className="img-title" src="img/section-6-title.png" alt="聯絡我們" />
+              <img src="img/section-6-slogan.png" alt="" className="slogan -d"/>
+              <img src="img/section-6-slogan-m.png" alt="" className="slogan -m"/>
             </div>
           </section>
 
